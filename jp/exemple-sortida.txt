@@ -1,0 +1,174 @@
+**** Exercici 1.0 ****
+Introdueix les paraules a identificar:
+Introdueix el text acabat en doble punt:
+Relacio de paraules buscades:
+La paraula "qwert" apareix 0 vegada/es.
+La paraula "poiuy" apareix 0 vegada/es.
+La paraula "dari" apareix 0 vegada/es.
+La paraula "meva" apareix 2 vegada/es.
+Resultat:
+Rati: paraules amb 2 o mes aparicions / total de paraules = 1 / 4 = 0.250
+El missatge no es SPAM.
+**** Exercici 1.1 ****
+Introdueix les paraules a identificar:
+Introdueix el text acabat en doble punt:
+Relacio de paraules buscades:
+La paraula "dear" apareix 1 vegada/es.
+La paraula "account" apareix 1 vegada/es.
+La paraula "director" apareix 2 vegada/es.
+La paraula "money" apareix 5 vegada/es.
+La paraula "dollars" apareix 2 vegada/es.
+La paraula "department" apareix 3 vegada/es.
+La paraula "of" apareix 22 vegada/es.
+La paraula "agriculture" apareix 3 vegada/es.
+La paraula "expensive" apareix 0 vegada/es.
+La paraula "beneficial" apareix 1 vegada/es.
+La paraula "to" apareix 21 vegada/es.
+La paraula "everyone" apareix 1 vegada/es.
+La paraula "payment" apareix 5 vegada/es.
+Resultat:
+Rati: paraules amb 2 o mes aparicions / total de paraules = 8 / 13 = 0.615
+El missatge es SPAM!
+**** Exercici 1.2 ****
+Introdueix les paraules a identificar:
+Introdueix el text acabat en doble punt:
+Relacio de paraules buscades:
+La paraula "mugabe" apareix 2 vegada/es.
+La paraula "security" apareix 2 vegada/es.
+La paraula "company" apareix 2 vegada/es.
+La paraula "amount" apareix 1 vegada/es.
+La paraula "cellphone" apareix 1 vegada/es.
+La paraula "number" apareix 2 vegada/es.
+La paraula "family" apareix 3 vegada/es.
+La paraula "ghana" apareix 3 vegada/es.
+La paraula "help" apareix 2 vegada/es.
+La paraula "us" apareix 6 vegada/es.
+Resultat:
+Rati: paraules amb 2 o mes aparicions / total de paraules = 8 / 10 = 0.800
+El missatge es SPAM!
+**** Exercici 1.3 ****
+Introdueix les paraules a identificar:
+Introdueix el text acabat en doble punt:
+Relacio de paraules buscades:
+La paraula "security" apareix 2 vegada/es.
+La paraula "protocol" apareix 1 vegada/es.
+La paraula "numbers" apareix 1 vegada/es.
+La paraula "congratulations" apareix 2 vegada/es.
+La paraula "euro" apareix 2 vegada/es.
+La paraula "promo" apareix 3 vegada/es.
+La paraula "international" apareix 2 vegada/es.
+La paraula "programs" apareix 1 vegada/es.
+La paraula "money" apareix 1 vegada/es.
+La paraula "winnings" apareix 2 vegada/es.
+Resultat:
+Rati: paraules amb 2 o mes aparicions / total de paraules = 6 / 10 = 0.600
+El missatge es SPAM!
+**** Exercici 1.4 ****
+Introdueix les paraules a identificar:
+Introdueix el text acabat en doble punt:
+Relacio de paraules buscades:
+La paraula "compassionate" apareix 2 vegada/es.
+La paraula "merciful" apareix 2 vegada/es.
+La paraula "funds" apareix 1 vegada/es.
+La paraula "financial" apareix 1 vegada/es.
+La paraula "help" apareix 1 vegada/es.
+La paraula "son" apareix 2 vegada/es.
+La paraula "inherit" apareix 3 vegada/es.
+Resultat:
+Rati: paraules amb 2 o mes aparicions / total de paraules = 4 / 7 = 0.571
+El missatge es SPAM!
+**** Exercici 2.0 ****
+Llegint sudoku...
+Sudoku llegit.
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2 | 3 | 7 | 8 | 9 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 5 | 6 | 1 | 2 | 3 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 8 | 9 | 4 | 5 | 6 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|---|
+| 2 | 3 | 1 | 8 | 9 | 7 | 5 | 6 | 4 |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 6 | 4 | 2 | 3 | 1 | 8 | 9 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| 8 | 9 | 7 | 5 | 6 | 4 | 2 | 3 | 1 |
+|---|---|---|---|---|---|---|---|---|
+| 3 | 1 | 2 | 9 | 7 | 8 | 6 | 4 | 5 |
+|---|---|---|---|---|---|---|---|---|
+| 6 | 4 | 5 | 3 | 1 | 2 | 9 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| 9 | 7 | 8 | 6 | 4 | 5 | 3 | 1 | 2 |
+|---|---|---|---|---|---|---|---|---|
+La solucio al Sudoku es CORRECTA!
+**** Exercici 2.1 ****
+Llegint sudoku...
+Sudoku llegit.
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2 | 3 | 7 | 8 | 9 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 5 | 6 | 1 | 2 | 3 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 8 | 9 | 4 | 5 | 6 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|---|
+| 2 | 3 | 1 | 8 | 9 | 7 | 5 | 6 | 4 |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 6 | 4 | 5 | 3 | 1 | 8 | 9 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| 8 | 9 | 7 | 2 | 6 | 4 | 2 | 3 | 1 |
+|---|---|---|---|---|---|---|---|---|
+| 3 | 1 | 2 | 9 | 7 | 8 | 6 | 4 | 5 |
+|---|---|---|---|---|---|---|---|---|
+| 6 | 4 | 5 | 3 | 1 | 2 | 9 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| 9 | 7 | 8 | 6 | 4 | 5 | 3 | 1 | 2 |
+|---|---|---|---|---|---|---|---|---|
+El Sudoku te un error a la fila 5.
+La solucio al Sudoku es INCORRECTA!
+**** Exercici 2.2 ****
+Llegint sudoku...
+Sudoku llegit.
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2 | 3 | 7 | 8 | 9 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 5 | 6 | 1 | 2 | 3 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 8 | 9 | 4 | 5 | 6 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|---|
+| 2 | 3 | 1 | 8 | 9 | 7 | 5 | 6 | 4 |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 6 | 4 | 2 | 3 | 1 | 9 | 8 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| 8 | 9 | 7 | 5 | 6 | 4 | 2 | 3 | 1 |
+|---|---|---|---|---|---|---|---|---|
+| 3 | 1 | 2 | 9 | 7 | 8 | 6 | 4 | 5 |
+|---|---|---|---|---|---|---|---|---|
+| 6 | 4 | 5 | 3 | 1 | 2 | 9 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| 9 | 7 | 8 | 6 | 4 | 5 | 3 | 1 | 2 |
+|---|---|---|---|---|---|---|---|---|
+El Sudoku te un error a la columna 7.
+La solucio al Sudoku es INCORRECTA!
+**** Exercici 2.3 ****
+Llegint sudoku...
+Sudoku llegit.
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|
+| 9 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| 8 | 9 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 8 | 9 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|---|---|
+| 6 | 7 | 8 | 9 | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 6 | 7 | 8 | 9 | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 5 | 6 | 7 | 8 | 9 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|---|
+| 3 | 4 | 5 | 6 | 7 | 8 | 9 | 1 | 2 |
+|---|---|---|---|---|---|---|---|---|
+| 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 1 |
+|---|---|---|---|---|---|---|---|---|
+El Sudoku te un error a la regio 1, 1.
+La solucio al Sudoku es INCORRECTA!
