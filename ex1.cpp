@@ -13,21 +13,19 @@ void results(int &length, int coincidences[N], char search_words[N][M]);
 void ratio(int coincidences[N], char words[N][M], int &length);
 int main()
 {
-    int i = 0, length = 0;
+    int length = 0;
     int coincidences[N] = {0};
     char search_words[N][M];
-    char repeated_words[length][M];
+    char repeated_words[N][M];
     char words[N][M];
     char letter;
     bool exit = false;
     bool last_word = false;
     printf("Introdueix les paraules a identificar:\n");
     keywords(letter, length, last_word, search_words, words);
-    printf("-------------------------\n");
     printf("Introdueix el text acabat en doble punt:\n");
     last_word = false;
     words_text(coincidences, words, length, letter, last_word, search_words, repeated_words, exit);
-    printf("\n--------------------------\n");
     printf("Relacio de paraules buscades:\n");
     /*for (i = 0; i < length; i++)
     {
@@ -35,14 +33,12 @@ int main()
     }*/
     results(length, coincidences, search_words);
     printf("Resultat:\n");
-    // printf("Rati: Rati: paraules amb 2 o mes aparicions / total de paraules = 1 / 4 = 0.250");
     ratio(coincidences, words, length);
 }
 
 void search_repeated_words(int coincidences[N], char words[N][M], int &length, char &letter, char search_words[][M], char repeated_words[][M], bool &last_word, bool &exit)
 {
     int i = 0, j = 1;
-    int contador = 0;
     char temp[M];
     i = 0;
     while (isalpha(letter) && last_word == false)
@@ -82,7 +78,7 @@ void ratio(int coincidences[N], char words[N][M], int &length)
     float flength = (float)length;
     for (i = 0; i < length; i++)
     {
-        if (coincidences[i] != 0)
+        if (coincidences[i] > 1)
         {
             contador++;
         }
@@ -162,7 +158,6 @@ void read_keyword(char &letter, int &length, bool &last_word, char search_words[
 {
     char searching_words[N + 1];
     int i = 0;
-    int x = 0;
     while (isalpha(letter) && last_word == false)
     {
 
@@ -171,10 +166,16 @@ void read_keyword(char &letter, int &length, bool &last_word, char search_words[
         i++;
         scanf("%c", &letter);
     }
+
     searching_words[i] = '\0';
-    strcpy(search_words[length], searching_words);
-    strcpy(words[length], search_words[length]);
-    printf("%s pos %i", search_words[length], length);
-    length++;
-    printf("\n");
+    if (searching_words[0] != '\0')
+    {
+        strcpy(search_words[length], searching_words);
+        strcpy(words[length], search_words[length]);
+        // printf("%s pos %i", search_words[length]\n, length);
+        length++;
+    }
+    else{
+        scanf("%c", &letter);
+    }
 }
