@@ -18,7 +18,7 @@ int main()
     char search_words[N][M];
     char repeated_words[N][M];
     char words[N][M];
-    char letter;
+    char letter = ' ';
     bool exit = false;
     bool last_word = false;
     printf("Introdueix les paraules a identificar:\n");
@@ -168,11 +168,11 @@ void read_keyword(char &letter, int &length, bool &last_word, char search_words[
     }
 
     searching_words[i] = '\0';
-    if (searching_words[0] != '\0')
+    if (searching_words[0] != '\0' && searching_words[1] != '\0')
     {
         strcpy(search_words[length], searching_words);
         strcpy(words[length], search_words[length]);
-        // printf("%s pos %i", search_words[length]\n, length);
+         //printf("%s pos %i \n", search_words[length], length);
         length++;
     }
     else{
