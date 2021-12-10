@@ -95,23 +95,24 @@ void ratio(int coincidences[N], char words[N][M], int &length)
 }
 void jump_text_spaces(char &letter, bool &last_word)
 {
+    int contador = 0;
     while (!isalpha(letter) && last_word == false)
     {
         scanf("%c", &letter);
         if (letter == '.')
         {
-            scanf("%c", &letter);
-            if (letter == '.')
-            {
-
-                last_word = true;
-            }
+            contador++;
+        }
+        if (contador == 2)
+        {
+            last_word = true;
         }
         else
         {
             last_word = false;
         }
     }
+    contador = 0;
 }
 void words_text(int coincidences[N], char words[N][M], int &length, char &letter, bool &last_word, char search_words[][M], char repeated_words[][M], bool &exit)
 {
@@ -172,10 +173,11 @@ void read_keyword(char &letter, int &length, bool &last_word, char search_words[
     {
         strcpy(search_words[length], searching_words);
         strcpy(words[length], search_words[length]);
-         //printf("%s pos %i \n", search_words[length], length);
+        // printf("%s pos %i \n", search_words[length], length);
         length++;
     }
-    else{
+    else
+    {
         scanf("%c", &letter);
     }
 }
