@@ -1,5 +1,6 @@
 # Spam-detector-Sudoku-checker
 This is our second project developed in C++ where we develop a basic spam detector and a sudoku checker.
+
 SPAM DETECTOR
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This program reads a .txt file where there are some keywords (known as spam words) and a text. If the spam words are in the text, the program is able to detect
