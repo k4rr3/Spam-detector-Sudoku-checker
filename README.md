@@ -1,5 +1,5 @@
 # Spam-detector-Sudoku-checker
-This is our second project developed in C++ where we develop a basic spam detector and a sudoku checker.
+This is our second project developed in C++ where we created a basic spam detector and a sudoku checker.
 
 SPAM DETECTOR
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
