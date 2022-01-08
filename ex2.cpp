@@ -4,6 +4,7 @@
 int sudoku[9][9];
 int regio[3][3];
 
+
 //variables globals on es guarda en quins espais hi ha hagut l'error
 int fila = 0;
 int columna = 0;
@@ -12,6 +13,57 @@ int RegioRow = 0;
 
 //identificador de quin ha estat l'error per donar un print diferent en cada cas
 int TypeOfError = 0; // 1 = fila; 2 = columna; 3 = regió
+
+//capçeleres de les funcions
+void GetSudoku();
+void PrintSudoku();
+void PrintSudoku();
+void GetRegio(int RegioCol, int RegioFila);
+bool CheckIndividualRegion();
+bool CheckRegions();
+bool CheckFiles(int row);
+bool CheckColumnes(int col);
+
+int main()
+{
+    bool correcte = true;
+
+    GetSudoku();
+    PrintSudoku();
+
+    int i = 0;
+
+    while (i < 9 && correcte)
+    {
+        if (!CheckFiles(i) || !CheckColumnes(i) || !CheckRegions()) //si qualsevol d'aquests checks es fals el sudoku ja està malament
+        {
+            correcte = false;
+        }
+
+        i++;
+    }
+
+    if (correcte)
+    {
+        printf("La solucio al Sudoku es CORRECTA!\n");
+    }
+    else
+    {
+        if (TypeOfError == 1)
+        {
+            printf("El sudoku te un error a la fila %i\n", fila + 1);
+        }
+        if (TypeOfError == 2)
+        {
+            printf("El sudoku te un error a la columna %i\n", columna + 1);
+        }
+        if (TypeOfError == 3)
+        {
+            printf("El sudoku te un error a la regió %i,%i\n", RegioRow + 1, RegioColumn + 1);
+        }
+        printf("La solucio al Sudoku es INCORRECTA!\n");
+    }
+}
 
 //Guarda el sudoku en memoria
 void GetSudoku()
@@ -70,7 +122,7 @@ bool CheckIndividualRegion()
             sum += regio[i][j];
         }
     }
-
+//el 45 fa referència a la suma de totes les caselles de la regió, per tant si la suma es diferent de 45, aleshores existeix un error
     if (sum == 45)
     {
         return true;
@@ -157,43 +209,3 @@ bool CheckColumnes(int col)
     }
 }
 
-int main()
-{
-    bool correcte = true;
-
-    GetSudoku();
-    PrintSudoku();
-
-    int i = 0;
-
-    while (i < 9 && correcte)
-    {
-        if (!CheckFiles(i) || !CheckColumnes(i) || !CheckRegions()) //si qualsevol d'aquests checks es fals el sudoku ja està malament
-        {
-            correcte = false;
-        }
-
-        i++;
-    }
-
-    if (correcte)
-    {
-        printf("La solucio al Sudoku es CORRECTA!\n");
-    }
-    else
-    {
-        if (TypeOfError == 1)
-        {
-            printf("El sudoku te un error a la fila %i\n", fila + 1);
-        }
-        if (TypeOfError == 2)
-        {
-            printf("El sudoku te un error a la columna %i\n", columna + 1);
-        }
-        if (TypeOfError == 3)
-        {
-            printf("El sudoku te un error a la regió %i,%i\n", RegioRow + 1, RegioColumn + 1);
-        }
-        printf("La solucio al Sudoku es INCORRECTA!\n");
-    }
-}
