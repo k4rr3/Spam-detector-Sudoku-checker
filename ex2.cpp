@@ -106,8 +106,10 @@ bool CheckRegions()
 
             GetRegio(RegioCol, RegioFila);
             correcte = CheckIndividualRegion();
+            RegioCol += 3;
             j++;
         }
+        RegioFila += 3;
         i++;
     }
 
