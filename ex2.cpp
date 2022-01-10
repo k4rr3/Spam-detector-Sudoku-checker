@@ -4,21 +4,23 @@
 int sudoku[9][9];
 int regio[3][3];
 
-
 //variables globals on es guarda en quins espais hi ha hagut l'error
 int fila = 0;
 int columna = 0;
 int RegioColumn = 0;
 int RegioRow = 0;
 
+int coincidencies[9] = {0,0,0,0,0,0,0,0,0}; //num de coincidencies per cada numero
+int ExpectedCoincidences[9] = {1,1,1,1,1,1,1,1,1}; //La array esperada resultant
+
 //identificador de quin ha estat l'error per donar un print diferent en cada cas
 int TypeOfError = 0; // 1 = fila; 2 = columna; 3 = regió
 
-//capçeleres de les funcions
 void GetSudoku();
 void PrintSudoku();
-void PrintSudoku();
 void GetRegio(int RegioCol, int RegioFila);
+void ResetCoincidencesTable();
+bool CompareArrays(int arr1[], int arr2[]);
 bool CheckIndividualRegion();
 bool CheckRegions();
 bool CheckFiles(int row);
@@ -111,22 +113,44 @@ void GetRegio(int RegioCol, int RegioFila)
     }
 }
 
+void ResetCoincidencesTable(){
+    for (int i = 0; i < 9; i++)
+    {
+        coincidencies[i] = 0;
+    }
+    
+}
+
+bool CompareArrays(int arr1[], int arr2[]){
+    bool result = true;
+    for (int i = 0; i < 9; i++)
+    {
+        if(arr1[i] != arr2[i]){
+            result = false;
+        }
+    }
+    return result;
+    
+}
+
 //comprova cada regió individualment
 bool CheckIndividualRegion()
 {
-    int sum = 0;
+    ResetCoincidencesTable();
+    int num = 0;
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            sum += regio[i][j];
+            num = regio[i][j];
+            coincidencies[num-1] += 1;
         }
     }
-//el 45 fa referència a la suma de totes les caselles de la regió, per tant si la suma es diferent de 45, aleshores existeix un error
-    if (sum == 45)
-    {
+
+    if(CompareArrays(coincidencies,ExpectedCoincidences)){
         return true;
     }
+    
     else
     {
         TypeOfError = 3;
@@ -171,13 +195,17 @@ bool CheckRegions()
 //comprova que la columna X sigui correcta
 bool CheckFiles(int row)
 {
-    int sum = 0;
+    ResetCoincidencesTable();
+    int num = 0;
     for (int i = 0; i < 9; i++)
     {
-        sum += sudoku[row][i];
+        num = sudoku[row][i];
+        coincidencies[num-1] += 1;
         fila = row;
+
     }
-    if (sum == 45)
+
+    if (CompareArrays(coincidencies,ExpectedCoincidences))
     {
         return true;
     }
@@ -191,13 +219,16 @@ bool CheckFiles(int row)
 //comprova que la fila X sigui correcta
 bool CheckColumnes(int col)
 {
-    int sum = 0;
+    ResetCoincidencesTable();
+    int num = 0;
     for (int i = 0; i < 9; i++)
     {
-        sum += sudoku[i][col];
+        num = sudoku[i][col];
+        coincidencies[num-1] += 1;
         columna = col;
     }
-    if (sum == 45)
+
+    if (CompareArrays(coincidencies,ExpectedCoincidences))
     {
         return true;
     }
@@ -208,4 +239,5 @@ bool CheckColumnes(int col)
         return false;
     }
 }
+
 
